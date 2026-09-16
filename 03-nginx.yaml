@@ -37,10 +37,10 @@
      ansible.builtin.package:
       name: nginx
       state: absent
-  #  - name: remove  
-  #    ansible.builtin.service:
-  #      name: nginx
-  #      state: removed
+   - name: remove  
+     ansible.builtin.service:
+       name: nginx
+       state: stopped
        
 
 
