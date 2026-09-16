@@ -4,11 +4,11 @@
   tasks:
    - name: hello print
      ansible.builtin.debug:
-      mes: hello play1
+      msg: hello play1
 
    - name: hello print
      ansible.builtin.debug:
-      mes: hello play2
+      msg: hello play2
 
 
 
@@ -18,9 +18,9 @@
   tasks:
    - name: hello print
      ansible.builtin.debug:
-      mes: hello play1
+      msg: hello play1
 
    - name: hello print
      ansible.builtin.debug:
-      mes: hello play4     
+      msg: hello play4     
 
