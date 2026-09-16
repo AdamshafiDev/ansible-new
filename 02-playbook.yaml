@@ -5,7 +5,7 @@
     ansible.builtin.ping:
    
   
-  - name: testing
+  - name: test
     hosts: local 
     connection: local
     tasks:
