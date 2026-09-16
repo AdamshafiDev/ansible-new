@@ -6,14 +6,14 @@
    duration: 111hr
    IS_LIVE: true
    tools:
-    - linux
-    - ansible
-    - shell
+   - linux
+   - ansible
+   - shell
   concepts: 
    CI: jenkens
    scripting: shell
-   tasks:
+  tasks:
     - name: information
       ansible.builtin.debug:
        msg: "hello {{ course }} is duration {{ duration }} is {{ IS_LIVE }} and tools are {{ tools }} and consets{{ CI }} and {{ scripting }}"
-       
+
