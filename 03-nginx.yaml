@@ -1,23 +1,38 @@
-- name: install nginx and run
-  hosts: frontend
-  become: yes
-  tasks:
-   - name: install nginx server
-     ansible.builtin.package:
-      name: nginx
-      state: present
-   - name: start the nginx
-     ansible.builtin.service:
-      name: nginx
-      state: started
-      enabled: yes
+# - name: install nginx and run
+#   hosts: frontend
+#   become: yes
+#   tasks:
+#    - name: install nginx server
+#      ansible.builtin.package:
+#       name: nginx
+#       state: present
+#    - name: start the nginx
+#      ansible.builtin.service:
+#       name: nginx
+#       state: started
+#       enabled: yes
 
 
 
-- name: install nginx
-  hosts: web
-  become: yes
-  tasks:
+# - name: install nginx
+#   hosts: web
+#   become: yes
+#   tasks:
+#    - name: inatll nginx
+#      ansible.builtin.package:
+#       name: nginx
+#       state: present
+#    - name: run   
+#      ansible.builtin.service:
+#        name: nginx
+#        state: started
+#        enabled: yes
+
+
+ - name: install nginx
+   hosts: web
+   become: yes
+   tasks:
    - name: inatll nginx
      ansible.builtin.package:
       name: nginx
@@ -25,8 +40,8 @@
    - name: run   
      ansible.builtin.service:
        name: nginx
-       state: started
-       enabled: yes
+       state: removed
+       
 
 
 
