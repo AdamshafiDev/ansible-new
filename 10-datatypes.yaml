@@ -9,9 +9,9 @@
    - linux
    - ansible
    - shell
-  concetps: 
-   CI: jenkens
-   scripting: "shell"
+   concetps: 
+    CI: jenkens
+    scripting: "shell"
   tasks:
    - name: information
      ansible.builtin.debug:
