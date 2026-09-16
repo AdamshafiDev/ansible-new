@@ -7,4 +7,4 @@
   tasks:
    - name: all files data
      ansible.builtin.debug:
-      msg: my course"{{ course }} is duration {{ duration }} and triner {{ trainer}}"
+       msg: "my course{{ course }} is duration {{ duration }} and triner {{ trainer}}"
