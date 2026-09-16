@@ -6,5 +6,5 @@
   tasks: 
    - name: number is  leaasthen 100
      ansible.builtin.debug: 
-      msg: "the number is {{ NUMBER }}"
-  when: NUMBER < 100
+       msg: "the number is {{ NUMBER }}"
+     when: NUMBER < 100
