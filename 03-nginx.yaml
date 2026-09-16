@@ -33,14 +33,14 @@
    hosts: frontend
    become: yes
    tasks:
-   - name: inatll nginx
-     ansible.builtin.package:
-      name: nginx
-      state: absent
    - name: remove  
      ansible.builtin.service:
        name: nginx
        state: stopped
+   - name: inatll nginx
+     ansible.builtin.package:
+      name: nginx
+      state: absent
        
 
 
