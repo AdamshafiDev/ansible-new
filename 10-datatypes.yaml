@@ -9,11 +9,11 @@
    - linux
    - ansible
    - shell
-  concepts: 
+  concetps: 
    CI: jenkens
    scripting: shell
   tasks:
    - name: information
      ansible.builtin.debug:
-       msg: "hello {{ course }} is duration {{ duration }} is {{ IS_LIVE }} and tools are {{ tools }} and consets{{ CI }} and {{ scripting }}"
+       msg: "hello {{ course }} is duration {{ duration }} is {{ IS_LIVE }} and tools are {{ tools }} and concetps are{{ concetps }} and {{ scripting }}"
 
