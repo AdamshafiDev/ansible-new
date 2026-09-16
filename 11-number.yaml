@@ -1,0 +1,9 @@
+- name: numverdatatypes
+  hosts: local
+  connection: local
+  vars:
+   NUMBER: 99
+  tasks: 
+   - name: number is equel leaasthen 100
+     ansible.builtin.debug:
+  when: NUMBER < 100
