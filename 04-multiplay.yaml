@@ -1,0 +1,26 @@
+- name: play1
+  hosts: local
+  connection: local
+  tasks:
+   - name: hello print
+     ansible.builtin.debug:
+      mes: hello play1
+
+   - name: hello print
+     ansible.builtin.debug:
+      mes: hello play2
+
+
+
+- name: play3
+  hosts: local
+  connection: local
+  tasks:
+   - name: hello print
+     ansible.builtin.debug:
+      mes: hello play1
+
+   - name: hello print
+     ansible.builtin.debug:
+      mes: hello play4     
+
