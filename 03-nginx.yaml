@@ -36,8 +36,8 @@
    - name: inatll nginx
      ansible.builtin.package:
       name: nginx
-      state: present
-   - name: run   
+      state: stopped
+   - name: remove  
      ansible.builtin.service:
        name: nginx
        state: removed
