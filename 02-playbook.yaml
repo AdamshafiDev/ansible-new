@@ -11,6 +11,6 @@
     tasks:
     - name: hello the server
       ansible.builtin.debug:
-       msg: "Hello i am shafi" 
+      msg: "Hello i am shafi" 
    
   
