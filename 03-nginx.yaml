@@ -36,11 +36,11 @@
    - name: inatll nginx
      ansible.builtin.package:
       name: nginx
-      state: stopped
-   - name: remove  
-     ansible.builtin.service:
-       name: nginx
-       state: removed
+      state: absent
+  #  - name: remove  
+  #    ansible.builtin.service:
+  #      name: nginx
+  #      state: removed
        
 
 
