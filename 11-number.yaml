@@ -4,6 +4,7 @@
   vars:
    NUMBER: 99
   tasks: 
-   - name: number is equel leaasthen 100
-     ansible.builtin.debug:
+   - name: number is  leaasthen 100
+     ansible.builtin.debug: 
+      msg: "the number is {{ NUMBER }}"
   when: NUMBER < 100
