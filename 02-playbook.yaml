@@ -7,6 +7,7 @@
   
 - name: test
   hosts: local 
+  connection: local
   tasks:
   - name: hello the server
     ansible.builtin.debug:
