@@ -33,15 +33,15 @@
    hosts: frontend
    become: yes
    tasks:
-   - name: restart  
+   - name: stopped  
      ansible.builtin.service:
        name: nginx
-       state: restarted
-   - name: inatll nginx
+       state: stopped
+   - name: uninatll nginx
      ansible.builtin.package:
       name: nginx
-      state: present
-      enabled: yes
+      state: absent
+      
        
 
 
