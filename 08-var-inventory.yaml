@@ -1,0 +1,7 @@
+- name: inverntory from varible
+  hosts: local
+  connection: local
+  tasks:
+   - name: course information
+     ansible.builtin.debug:
+      msg: "my couse is {{ course }} and time is {{ duration }} and trainer is {{ trainer }}"
