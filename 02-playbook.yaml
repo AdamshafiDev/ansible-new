@@ -5,3 +5,12 @@
     ansible.builtin.ping:
    
   
+  - name: testing
+    hosts: local 
+    connection: local
+    tasks:
+    - name: hello the server
+      ansible.builtin.debug:
+       msg: "Hello i am shafi" 
+   
+  
