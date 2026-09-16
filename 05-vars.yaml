@@ -10,6 +10,6 @@
   
       - name: couser information
         vars: 
-         cousree: devops
+         course: devops
         ansible.builtin.debug:
          msg: "hello {{ course }},course {{ duration }} course triner {{ trainer }}"
