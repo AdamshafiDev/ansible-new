@@ -9,4 +9,4 @@
   tasks:
       - name: couser information
         ansible.builtin.debug:
-         msg: "hello {{ course }} course {{ duration }} course {{ trainer }}"
+         msg: "hello {{ course }},course {{ duration }}, course {{ trainer }}"
