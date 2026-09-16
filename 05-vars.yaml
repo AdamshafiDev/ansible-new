@@ -7,6 +7,9 @@
     trainer: adam
 
   tasks:
+  
       - name: couser information
+        vars: 
+         cousree: devops
         ansible.builtin.debug:
          msg: "hello {{ course }},course {{ duration }} course triner {{ trainer }}"
