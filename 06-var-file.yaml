@@ -3,6 +3,7 @@
   connection: local
   vars_files:
   - course.yaml
+  - course2.yaml
   tasks:
   - name: all files data
     ansible.builtin.debug:
