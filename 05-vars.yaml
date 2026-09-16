@@ -5,20 +5,18 @@
     course: ansible
     duration: 10HR
     trainer: adam
-
-  
-  tasks:
-   - name: couser information
-     vars: 
+    tasks:
+    - name: couser information
+    vars: 
       course: devops
       ansible.builtin.debug:
          msg: "hello {{ course }},course {{ duration }} course triner {{ trainer }}"
 
 
 
-  tasks:
+  # tasks:
   
-  - name: couser information
-    course: aws and azure
-    ansible.builtin.debug:
-         msg: "hello {{ course }},course {{ duration }} course triner {{ trainer }}"
+  # - name: couser information
+  #   course: aws and azure
+  #   ansible.builtin.debug:
+  #        msg: "hello {{ course }},course {{ duration }} course triner {{ trainer }}"
