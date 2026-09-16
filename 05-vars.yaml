@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    Cousse: ansible
+    course: ansible
     duration: 10HR
     trainer: adam
 
