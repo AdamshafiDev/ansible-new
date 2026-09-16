@@ -21,8 +21,11 @@
    - name: inatll nginx
      ansible.builtin.package:
       name: nginx
-      state: started
-      enabled: yes
+      state: present
+      ansible.builtin.service:
+       name: nginx
+       state: started
+       enabled: yes
 
 
 
