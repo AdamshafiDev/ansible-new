@@ -30,7 +30,7 @@
 
 
  - name: install nginx
-   hosts: web
+   hosts: frontend
    become: yes
    tasks:
    - name: inatll nginx
