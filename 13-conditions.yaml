@@ -1,5 +1,5 @@
 - name: conditions
-  host: frontend
+  hosts: frontend
   become: yes
   tasks:
    - name: install nginx if state is redhat
