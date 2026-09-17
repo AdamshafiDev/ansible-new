@@ -3,7 +3,7 @@
   connection: local
   tasks:
    - name: ip checks
-     var: 
-     ip: "255.255.255.255"
+     vars: 
+      ip: "255.255.255.255"
      ansible.builtin.debug:
        msg: "{{ ip | ansible.utils.ipaddr }}}"
