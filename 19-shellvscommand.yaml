@@ -12,6 +12,8 @@
    - name: command mode checks  
      ansible.builtin.command: "ls -lrt"
      register: result_output
+   - name: print the result
+
      ansible.builtin.debug:
       msg: "{{ result_output }}"
 
