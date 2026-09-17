@@ -9,7 +9,7 @@
      when: ansible_os_family == "RedHat"
      ansible.builtin.service:
        name: nginx
-       state: installed
+       state: started
        enabled: yes
 
    - name: install nginx if debian 
@@ -19,5 +19,5 @@
      when: ansible_os_family == "Debian"
      ansible.builtin.service:
        name: nginx
-       state: installed
+       state: started
        enabled: yes
