@@ -9,6 +9,6 @@
      loop:
       - mysql
       - nginx
-      - Zip
+      - zip
    
     
