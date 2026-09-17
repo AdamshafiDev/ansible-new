@@ -2,7 +2,7 @@
   hosts: frontend
   become: yes
   tasks:
-    - name: loops
+    - name: loops installed
       ansible.builtin.package:
          name: "{{ name.item }}"
          state: "{{ state.item }}"
