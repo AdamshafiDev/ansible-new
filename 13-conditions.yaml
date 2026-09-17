@@ -17,3 +17,7 @@
        name: nginx
        state: present
      when: ansible_os_family == "Debian"
+     ansible.builtin.service:
+       name: nginx
+       state: installed
+       enabled: yes
