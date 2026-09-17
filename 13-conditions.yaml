@@ -8,17 +8,21 @@
        state: present
      when: ansible_os_family == "RedHat"
 
+   - name: start the services
+
      ansible.builtin.service:
        name: nginx
        state: started
        enabled: yes
 
-  #  - name: install nginx if debian 
-  #    ansible.builtin.apt:
-  #      name: nginx
-  #      state: present
-  #    when: ansible_os_family == "Debian"
-  #    ansible.builtin.service:
-  #      name: nginx
-  #      state: started
-  #      enabled: yes
+   - name: install nginx if debian 
+     ansible.builtin.apt:
+       name: nginx
+       state: present
+     when: ansible_os_family == "Debian"
+   - name: start the services
+
+     ansible.builtin.service:
+       name: nginx
+       state: started
+       enabled: yes
