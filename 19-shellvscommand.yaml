@@ -3,8 +3,16 @@
   tasks:
    - name: chck command and shell
     # ansible.builtin.command: "ls -lrt > /tmp/output.txt"
-     ansible.builtin.shell: "ls -lrt  > /tmp/output.txt"
+     #ansible.builtin.shell: "ls -lrt  > /tmp/output.txt"
      register: command_result
    - name: print the outcome
      ansible.builtin.debug:
       msg: "{{ command_result }}"  
+   
+   - name: command mode checks  
+     ansible.builtin.command: "ls -lrt"
+     register: result_output
+     ansible.builtin.debug:
+      msg: "{{ result_output }}"
+
+
