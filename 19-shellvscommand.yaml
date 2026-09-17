@@ -2,6 +2,5 @@
   hosts: frontend
   tasks:
    - name: chck command and shell
-     ansible.builtin.command: "ls -lrt > /tmp/output.txt"
-     #ansible.builtin.shell: "ls -lrt  > /tmp/output.txt"
-     
+    # ansible.builtin.command: "ls -lrt > /tmp/output.txt"
+     ansible.builtin.shell: "ls -lrt  > /tmp/output.txt"
