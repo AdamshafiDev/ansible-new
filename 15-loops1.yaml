@@ -1,0 +1,14 @@
+- name: loops in packege install
+  hosts: frontend
+  become: yes
+  tasks:
+   - name: install packeges
+     ansible.builtin.package:
+       name: "{{ item }}"
+       state: present
+     loop:
+      - mysql
+      - nginx
+      - Zip
+   
+    
