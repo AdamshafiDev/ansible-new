@@ -4,6 +4,6 @@
   tasks:
    - name: ip checks
      vars: 
-      ip: "255.255.255.255"
+      ip: "256.255.255.255"
      ansible.builtin.debug:
        msg: "{{ ip | ansible.utils.ipaddr }}}"
